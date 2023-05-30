@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Student } from 'src/app/interfaces/student.interface';
-import { StudentService } from '../../services/student.service';
+import { HomeService } from '../../services/home.service';
 
 
 @Component({
@@ -13,16 +13,17 @@ export class StudentPageComponent implements OnInit {
     {
       id: 1,
       name: 'John Doe',
+      program: 'Computer Science',
       linkedin: 'https://www.linkedin.com/in/john-doe/',
       image: 'https://via.placeholder.com/150',
       caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     }
   ];
 
-  constructor(private studentService: StudentService) { }
+  constructor(private homeService: HomeService) { }
 
   ngOnInit(): void {
-    this.studentService.getStudents().subscribe((student: [Student]) => {
+    this.homeService.getStudents().subscribe((student: [Student]) => {
       this.students = student;
     })
   }

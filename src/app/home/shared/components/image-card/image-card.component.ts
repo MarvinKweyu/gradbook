@@ -11,6 +11,7 @@ export class ImageCardComponent implements OnInit {
   @Input() student: Student = {
     id: 0,
     name: "string",
+    program: "string",
     linkedin: "string",
     image: "string",
     caption: "string"
