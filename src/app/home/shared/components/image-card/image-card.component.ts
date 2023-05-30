@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Student } from 'src/app/interfaces/student.interface';
+import { Student } from '../../interfaces/student.interface';
+
 
 @Component({
   selector: 'app-image-card',

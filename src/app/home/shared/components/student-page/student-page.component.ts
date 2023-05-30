@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Student } from 'src/app/interfaces/student.interface';
+import { Student } from '../../interfaces/student.interface';
+
 import { HomeService } from '../../services/home.service';
 
 
