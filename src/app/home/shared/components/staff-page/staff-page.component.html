@@ -1,15 +1,29 @@
-<div class="px-2 md:mx-36">
+<div class="px-4 md:mx-36">
   <div class="grid grid-cols-1 md:grid-cols-2 md:mt-10">
     <img
       src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGlmb2xpbyUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
       alt="staffname"
       class="rounded"
     />
-    <div class="md:mt-10">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sapiente
-      veniam sed tempore dolor, expedita vero, molestiae vitae alias voluptas
-      maxime molestias omnis aperiam, quas accusantium laborum nulla quia
-      nesciunt!
+    <div class="mt-4 md:mt-10">
+      <div class="mb-4">
+        <h1 class="text-xl font-bold">Staff Name</h1>
+        <h2 class="text-sm italic">
+          <span
+            *ngFor="let class of ['Entrepreneurship', 'Business', 'Algorithms']"
+          >
+            {{ class }},
+          </span>
+        </h2>
+
+        <h3 class="mt-4">LinkedIn</h3>
+      </div>
+      <article>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sapiente
+        veniam sed tempore dolor, expedita vero, molestiae vitae alias voluptas
+        maxime molestias omnis aperiam, quas accusantium laborum nulla quia
+        nesciunt!
+      </article>
     </div>
   </div>
 </div>

@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  pageTitle: string = 'Yearbook 2023';
+  // ToDo: To be replaced with actual year
+  year = new Date().getFullYear();
+  pageTitle: string = `Yearbook ${this.year}`;
 
 }
